@@ -1,0 +1,36 @@
+{
+  "name": "tranzit-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy:bridge:polygon:mumbai": "npx hardhat run scripts/deploy/deploy_mumbai.ts --network mumbai",
+    "deploy:bridge:ethereum:sepolia": "npx hardhat run scripts/deploy/deploy_sepolia.ts --network sepolia",
+    "deploy:bridge:avalanche:fuji": "npx hardhat run scripts/deploy/deploy_fuji.ts --network avalanche_fuji",
+    "verify:bridge:polygon:mumbai": "npx hardhat run scripts/verify/verify_mumbai.ts --network mumbai",
+    "verify:bridge:ethereum:sepolia": "npx hardhat run scripts/verify/verify_sepolia.ts --network sepolia",
+    "verify:bridge:avalanche:fuji": "npx hardhat run scripts/verify/verify_fuji.ts --network avalanche_fuji",
+    "fund:bridge:polygon:mumbai": "npx hardhat run scripts/fund/fund_mumbai.ts --network mumbai",
+    "fund:bridge:ethereum:sepolia": "npx hardhat run scripts/fund/fund_sepolia.ts --network sepolia",
+    "fund:bridge:avalanche:fuji": "npx hardhat run scripts/fund/fund_fuji.ts --network avalanche_fuji"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@types/chai": "^4.3.9",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "^20.8.7",
+    "chai": "^4.3.10",
+    "hardhat": "^2.18.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.1.1",
+    "@chainlink/contracts-ccip": "^0.7.6",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}

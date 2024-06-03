@@ -1,0 +1,8 @@
+rtftestnet:
+  name: rtftestnet
+  chainId: 22999
+  domainId: 22999
+  protocol: ethereum
+  rpcUrls:
+    - http: https://rpc-testnet.rtfight.com
+

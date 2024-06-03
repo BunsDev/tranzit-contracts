@@ -1,0 +1,1 @@
+export type validNetworks = 'amoy'|'sepolia'|'fuji'|'zkEVM-testnet';

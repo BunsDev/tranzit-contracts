@@ -1,0 +1,5 @@
+rtftestnet:
+  threshold: 1
+  validators:
+    - "0x32d25197eBcB83737Fcc8175aA2653aAE7dF3C25"
+
